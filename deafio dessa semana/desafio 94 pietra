@@ -1,0 +1,18 @@
+dicionario = {}
+lista = []
+while True:
+    nome = {'nome': input('qual o seu nome: ')}
+    sexo = {'sexo': input('qual é o seu sexo?? m/f: ')}
+    idade = {'idade':int(input('quantos anos vc tem: '))}
+    pessoas = input(' alguem mais?? sim ou não: ')
+    if pessoas == 'sim':
+        nome = {'nome': input('qual o seu nome: ')}
+        sexo = {'sexo': input('qual é o seu sexo?? m/f: ')}
+        idade = {'idade': int(input('quantos anos vc tem: '))}
+        pessoas = input('alguem mais?? sim ou não: ')
+    else:
+        break
+lista.append('nome')
+lista.append('sexo')
+lista.append('idade')
+print(lista)
