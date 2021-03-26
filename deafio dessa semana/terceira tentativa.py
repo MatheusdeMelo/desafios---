@@ -15,7 +15,5 @@ while True:
 temporada['média'] = round(contador / temporada['partidas'], 2)
 for c in range(contador):
     print(f"""Dados da Temporada:
-nome: {temporada['nome'][c]}
-partidas jogadas: {temporada['partidas'][c]}
-gols: {temporada['gols']} com uma porcentagem de {temporada['média'][c]}
+{lista}
 """)
