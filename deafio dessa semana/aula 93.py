@@ -13,3 +13,5 @@ print(f'''Dados da temporada do {temporada['nome']}:
 Ele jogou {temporada['numero de partidas']} partidas e nesse numero de partidas ele fez {temporada['gols']}
 a média dele foi de {temporada['porcentagem']} gols por partida
 ''')
+
+print(f'blah blah blah')
