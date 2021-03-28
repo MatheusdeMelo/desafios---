@@ -13,6 +13,5 @@ while True:
     if pergunta == 'N':
         break
 temporada['média'] = round(contador / temporada['partidas'], 2)
-print(f"""Dados da Temporada:
-{lista}
-""")
+for temporada in lista:
+    print(temporada)
