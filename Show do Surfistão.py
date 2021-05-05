@@ -1,5 +1,15 @@
 def coloque(dic, name, coisa):
     dic[name] = coisa
+def listar(um, dois, tres, quatro, cinco):
+    lista = []
+    lista.append(um)
+    lista.append(dois)
+    lista.append(tres)
+    lista.append(quatro)
+    lista.append(cinco)
+    str(input(random.choice(lista)))
+
+
 import random
 dict1 = {'pergunta': 'raiz quadrada de 36: ', 'resp certa': 6, 'resp errada1': 18, 'resp errada2': 3}
 dict2 = {'pergunta': 'qual é a regra utilizada pra resolver equações de 2°: ', 'resp certa': 'formula de Bhaskara','resp errada1': 'formula de Newton', 'resp errada2': 'teorema de Pitágoras'}
@@ -13,5 +23,5 @@ coloque(matematica, '3°', dict3)
 coloque(matematica, '4°', dict4)
 coloque(matematica, '5°', dict5)
 #lista = [matematica, geografia, historia, curiosidades, ciências]
-print(matematica)
-amor = input('qual??')
+listar(matematica['1°']['pergunta'], matematica['2°']['pergunta'], matematica['3°']['pergunta'], matematica['4°']['pergunta'], matematica['5°']['pergunta'])
+print()
