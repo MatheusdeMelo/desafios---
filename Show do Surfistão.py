@@ -4,6 +4,7 @@ def coloque(dic, name, coisa):
 
 def listar(um, dois, tres, quatro, cinco):
     global resultado
+    global bagunça
     lista = []
     lista.append(um)
     lista.append(dois)
@@ -11,6 +12,19 @@ def listar(um, dois, tres, quatro, cinco):
     lista.append(quatro)
     lista.append(cinco)
     resultado = str(input(random.choice(lista)))
+    if random.choice(lista) == um:
+        lista.remove(um)
+    if random.choice(lista) == dois:
+        lista.remove(dois)
+    if random.choice(lista) == tres:
+        lista.remove(tres)
+    if random.choice(lista) == quatro:
+        lista.remove(quatro)
+    if random.choice(lista) == cinco:
+        lista.remove(cinco)
+
+
+
 
 
 
@@ -35,6 +49,7 @@ def conferir(a):
 
 import random
 resultado = ''
+bagunça = []
 dict1 = {'pergunta': 'raiz quadrada de 36: ', 'resp certa': 6, 'resp errada1': 18, 'resp errada2': 3}
 dict2 = {'pergunta': 'qual é a regra utilizada pra resolver equações de 2°: ', 'resp certa': 'formula de Bhaskara','resp errada1': 'formula de Newton', 'resp errada2': 'teorema de Pitágoras'}
 dict3 = {'pergunta': 'reposta de 22 + 3 x (2 x 5) - 4: ', 'resp certa': 48, 'resp errada1': 246, 'resp errada2': 72}
@@ -50,4 +65,4 @@ coloque(matematica, '5°', dict5)
 for c in range(5):
     listar(matematica['1°']['pergunta'], matematica['2°']['pergunta'], matematica['3°']['pergunta'], matematica['4°']['pergunta'], matematica['5°']['pergunta'])
     conferir(resultado)
-    print(c)
+    print(type(resultado))
