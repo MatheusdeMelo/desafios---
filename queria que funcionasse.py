@@ -22,5 +22,5 @@ perguntas = []
 perguntas.append(dic1['pergunta1'])
 resposta = input('Vamos começar o jogo?: ')
 if resposta == 'sim':
-    print('simbora')
+    print('vamo simbora')
     mostrar(perguntas, dic1['resposta1'], dic1['resposta1²'], dic1['resposta1³'])
