@@ -13,6 +13,7 @@ def mostrar(uma_lista, resposta1, resposta2, resposta3):
         pontos += 1
         print('Você acertou')
         print(f'até agora essa é sua pontuação: {pontos}')
+    return pontos
 
 
 
@@ -21,6 +22,12 @@ dic1 = {'pergunta1': 'oq é utilizado para resolver as equações de segundo gra
 perguntas = []
 perguntas.append(dic1['pergunta1'])
 resposta = input('Vamos começar o jogo?: ')
-if resposta == 'sim':
-    print('vamos simbora')
-    mostrar(perguntas, dic1['resposta1'], dic1['resposta1²'], dic1['resposta1³'])
+pontos = 0
+while True:
+    if resposta == 'sim':
+        print('vamos simbora')
+        mostrar(perguntas, dic1['resposta1'], dic1['resposta1²'], dic1['resposta1³'])
+        outra_resposta = input('Quer continuar jogando?: ')
+        if outra_resposta == 'não':
+            break
+print(f'Essa é sua pontuação final: {pontos}')
