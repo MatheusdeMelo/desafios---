@@ -1,6 +1,8 @@
 import random
 def mostrar(uma_lista, resposta1, resposta2, resposta3):
     aleatorizando = random.choice(uma_lista)
+    resposta_certa = []
+    resposta_certa.append(dic1['resposta1²'])
     print(f"""{aleatorizando}
     
     a){resposta1}
@@ -9,11 +11,16 @@ def mostrar(uma_lista, resposta1, resposta2, resposta3):
     """)
     uma_resposta = input('Qual é a resposta?: ')
     pontos = 0
-    if uma_resposta == 'b':
+    if resposta2 in resposta_certa and uma_resposta == 'b':
         pontos += 1
         print('Você acertou')
         print(f'até agora essa é sua pontuação: {pontos}')
-    return pontos
+    else:
+        print('Você errou')
+        print(f'até agora essa é sua pontuação: {pontos}')
+    total = 0
+    total += pontos
+    return total
 
 
 
@@ -23,6 +30,7 @@ perguntas = []
 perguntas.append(dic1['pergunta1'])
 resposta = input('Vamos começar o jogo?: ')
 pontos = 0
+total = 0
 while True:
     if resposta == 'sim':
         print('vamos simbora')
@@ -30,4 +38,4 @@ while True:
         outra_resposta = input('Quer continuar jogando?: ')
         if outra_resposta == 'não':
             break
-print(f'Essa é sua pontuação final: {pontos}')
+print(f'Essa é sua pontuação final: {total}')
