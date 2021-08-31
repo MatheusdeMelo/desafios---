@@ -90,11 +90,11 @@ port5 = {'pergunta5': 'para a frase: "Augusto vai ____ hoje?". Qual seria a resp
          'resposta5²': 'viajando', 'resposta5³': 'viajar'}
 cie1 = {'pergunta1': 'Qual dessas alternativas não é o nome de uma árvore?:', 'resposta1': 'Pata de Vaca',
         'resposta1²': 'Cabeça de Jegue', 'resposta1³': 'Ipê-branco'}
-cie2 = {'pergunta2': 'O que está não errado?:', 'resposta2': 'Os mamíferos tem sangue frio',
+cie2 = {'pergunta2': 'O que não está errado?:', 'resposta2': 'Os mamíferos tem sangue frio',
         'resposta2²': 'Os mamíferos são os animais que mamam', 'resposta2³': 'Os mamíferos incluem as cobras'}
 cie3 = {'pergunta3': 'Quais desses nomes cíentificos não esxistem?:' , 'resposta3' : 'Sphyrna lewini',
         'resposta3²': 'Gorilla gorilla gorilla', 'resposta3³': 'Baleia baleia baleia'}
-cie4 = {'pergunta4': 'Qual desses materias tem uma densidade (g/cm³)?:', 'resposta4': 'Cobre',
+cie4 = {'pergunta4': 'Qual desses materias tem uma maior densidade (g/cm³)?:', 'resposta4': 'Cobre',
         'resposta4²': 'Diamante', 'resposta4³': 'Madeira'}
 cie5 = {'pergunta5': 'Qual desses animais possuem a mordida mais forte?:', 'resposta5': 'Tubarão',
         'resposta5²': 'Crocodilo', 'resposta5³': 'T-rex'}
