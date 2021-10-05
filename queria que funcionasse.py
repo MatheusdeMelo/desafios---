@@ -58,7 +58,7 @@ Qual é a resposta?: """)
 
 
 
-mat1 = {'pergunta1': 'oq é utilizado para resolver as equações de segundo grau?: ', 'resposta1': 'formula de Richtter'
+mat1 = {'pergunta1': 'o que é utilizado para resolver as equações de segundo grau?: ', 'resposta1': 'formula de Richtter'
     , 'resposta1²': 'formula de Bhaskara', 'resposta1³': 'formula de Tesla'}
 mat2 = {'pergunta2': 'qual é o valor da equação: 2x -b + 20; sendo x = 8 e b = 12', 'resposta2': 36, 'resposta2²': 22,
         'resposta2³': 24}
