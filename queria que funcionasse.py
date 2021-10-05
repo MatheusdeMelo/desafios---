@@ -99,10 +99,11 @@ cie4 = {'pergunta4': 'Qual desses materias tem uma maior densidade (g/cm³)?:', 
 cie5 = {'pergunta5': 'Qual desses animais possuem a mordida mais forte?:', 'resposta5': 'Tubarão',
         'resposta5²': 'Crocodilo', 'resposta5³': 'T-rex'}
 os_pontos = 0
+contador = 0
 resposta = input('Vamos começar o jogo?: ')
 if resposta == 'sim':
     while True:
-        antes_de_uma_resposta = input("""Escolha uma matéria:
+        antes_de_uma_resposta = input("""Escolha uma alternativa (ex: a = Matemática):
         a) Matemática
         b) História
         c) Português
@@ -111,32 +112,61 @@ if resposta == 'sim':
         if antes_de_uma_resposta == 'a':
             print('Vamos de matemática então!')
             mat_resposta = perguntar(mat1['pergunta1'], mat1['resposta1'], mat1['resposta1²'], mat1['resposta1³'])
+            contador += 1
             mat_resposta1 = perguntar(mat2['pergunta2'], mat2['resposta2'], mat2['resposta2²'], mat2['resposta2³'])
+            contador += 1
             mat_resposta2 = perguntar(mat3['pergunta3'], mat3['resposta3'], mat3['resposta3²'], mat3['resposta3³'])
+            contador += 1
             mat_resposta3 = perguntar(mat4['pergunta4'], mat4['resposta4'], mat4['resposta4²'], mat4['resposta4³'])
+            contador += 1
             mat_resposta4 = perguntar(mat5['pergunta5'], mat5['resposta5'], mat5['resposta5²'], mat5['resposta5³'])
-        if antes_de_uma_resposta == 'b':
+            contador += 1
+        elif antes_de_uma_resposta == 'b':
             print('Vamos de história então!')
             hist_resposta = perguntar(hist1['pergunta1'], hist1['resposta1'], hist1['resposta1²'], hist1['resposta1³'])
+            contador += 1
             hist_resposta1 = perguntar(hist2['pergunta2'], hist2['resposta2'], hist2['resposta2²'], hist2['resposta2³'])
+            contador += 1
             hist_resposta2 = perguntar(hist3['pergunta3'], hist3['resposta3'], hist3['resposta3²'], hist3['resposta3³'])
+            contador += 1
             hist_resposta3 = perguntar(hist4['pergunta4'], hist4['resposta4'], hist4['resposta4²'], hist4['resposta4³'])
+            contador += 1
             hist_resposta4 = perguntar(hist5['pergunta5'], hist5['resposta5'], hist5['resposta5²'], hist5['resposta5³'])
-        if antes_de_uma_resposta == 'c':
+            contador += 1
+        elif antes_de_uma_resposta == 'c':
             print('Vamos de português então!')
             port_resposta = perguntar(port1['pergunta1'], port1['resposta1'], port1['resposta1²'], port1['resposta1³'])
+            contador += 1
             port_resposta1 = perguntar(port2['pergunta2'], port2['resposta2'], port2['resposta2²'], port2['resposta2³'])
+            contador += 1
             port_resposta2 = perguntar(port3['pergunta3'], port3['resposta3'], port3['resposta3²'], port3['resposta3³'])
+            contador += 1
             port_resposta3 = perguntar(port4['pergunta4'], port4['resposta4'], port4['resposta4²'], port4['resposta4³'])
+            contador += 1
             port_resposta4 = perguntar(port5['pergunta5'], port5['resposta5'], port5['resposta5²'], port5['resposta5³'])
-        if antes_de_uma_resposta == 'd':
+            contador += 1
+        elif antes_de_uma_resposta == 'd':
             print('Vamos de ciência então!')
             cie_resposta = perguntar(cie1['pergunta1'], cie1['resposta1'], cie1['resposta1²'], cie1['resposta1³'])
+            contador += 1
             cie_resposta1 = perguntar(cie2['pergunta2'], cie2['resposta2'], cie2['resposta2²'], cie2['resposta2³'])
+            contador += 1
             cie_resposta2 = perguntar(cie3['pergunta3'], cie3['resposta3'], cie3['resposta3²'], cie3['resposta3³'])
+            contador += 1
             cie_resposta3 = perguntar(cie4['pergunta4'], cie4['resposta4'], cie4['resposta4²'], cie4['resposta4³'])
+            contador += 1
             cie_resposta4 = perguntar(cie5['pergunta5'], cie5['resposta5'], cie5['resposta5²'], cie5['resposta5³'])
-        ahhhhhh = input('Quer continuar a jogar ou ficar com os pontos que vc já ganhou?: ')
+            contador += 1
+        else:
+            print('Caractere inválido! Tente novamente!')
+        ahhhhhh = input('Quer continuar a jogar (digite sim) ou ficar com os pontos que vc já ganhou (digite não)?: ')
         if ahhhhhh == 'não':
             break
-print(f'Os pontos que você conquistou: {cie_resposta4}; e esse é o valor que você acumulou: R${cie_resposta4*500}')
+if contador <= 5:
+    print(f'Os pontos que você conquistou: {mat_resposta4}; e esse é o valor que você acumulou: R${mat_resposta4*500}')
+if contador <= 10 and contador > 5:
+    print(f'Os pontos que você conquistou: {hist_resposta4}; e esse é o valor que você acumulou: R${hist_resposta4*500}')
+if contador <= 15 and contador > 10:
+    print(f'Os pontos que você conquistou: {port_resposta4}; e esse é o valor que você acumulou: R${port_resposta4*500}')
+if contador <= 20 and contador > 15:
+    print(f'Os pontos que você conquistou: {cie_resposta4}; e esse é o valor que você acumulou: R${cie_resposta4*500}')
