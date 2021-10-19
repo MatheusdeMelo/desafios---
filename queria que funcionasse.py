@@ -71,7 +71,7 @@ hist1 = {'pergunta1': 'quem foi o primeiro ministro britânico que atuou na 2° 
          'resposta1': 'Winston Churchill', 'resposta1²': 'Anthony Eden', 'resposta1³': 'George Bush'}
 hist2 = {'pergunta2': 'quais desses países estavam do lado dos EUA na guerra fria?: ', 'resposta2': 'China',
          'resposta2²': 'Canada', 'resposta2³': 'Alemanha Oriental'}
-hist3 = {'pergunta3': 'quais desses ditadores causaram mais mortes?: ', 'resposta3': 'Josef Stalin',
+hist3 = {'pergunta3': 'qual desses ditadores causaram mais mortes?: ', 'resposta3': 'Josef Stalin',
          'resposta3²': 'Hugo Chávez', 'resposta3³': 'Mao Tse-tsung'}
 hist4 = {'pergunta4': 'qual é a maior base da sociedade ocidental?: ', 'resposta4': 'O marxicismo',
          'resposta4²': 'O cristianismo', 'resposta4³': 'O populismo'}
